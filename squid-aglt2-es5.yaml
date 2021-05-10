@@ -1,0 +1,26 @@
+
+ImageTag: testing
+NodeSelection:
+  Hostname: sl-um-es5.slateci.io
+  OpenDefaultMonPort: True
+Instance: !<!> es5
+Service:
+  ExternalVisibility: NodePort
+  MonitoringPort: 3401
+  NodePort: 30112
+  Port: 3128
+SquidConf:
+  MonitoringIPRange: 127.0.0.1/32 192.170.227.128/32 128.135.158.191/32 188.185.0.0/17 131.225.240.232/32 128.142.0.0/16 188.184.128.0/17 188.185.48.0/20 188.185.128.0/17 129.79.157.0/24
+  DisableLogging: True
+  CacheSize: 10000
+  RequestEphemeralSize: 5
+  CacheMem: 32768
+  CleanLog: False
+  Logfile_Rotate: !<!> 50
+  MaximumObjectSizeInMemory: !<!> 1048704
+  DisableDiskCache: True
+  LogToStdout: True
+  MaxAccessLog: !<!> 20M
+  IPRange: 192.41.230.0/23 192.41.236.0/23 10.10.0.0/16 141.211.0.0/16 129.79.157.0/24 2001:48A8:68F7:0001::/64 2001:48A8:68F7:8001::/64
+  CPU: 2
+  LimitEphemeralSize: 10
