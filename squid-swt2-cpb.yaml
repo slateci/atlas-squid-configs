@@ -23,3 +23,4 @@ Service:
   MonitoringPort: 3401
   Port: 3128
   NodePort: 32200
+ImageTag: testing

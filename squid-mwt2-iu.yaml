@@ -24,3 +24,4 @@ SquidConf:
   LogToStdout: False
   LimitEphemeralSize: 20480
   Logfile_Rotate: !<!> 5
+ImageTag: testing
