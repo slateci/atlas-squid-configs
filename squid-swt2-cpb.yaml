@@ -1,19 +1,19 @@
-
 SquidConf:
   LimitEphemeralSize: 2000
-  CacheSize: 100
+  CacheSize: 100000
   MonitoringIPRange: 127.0.0.1/32 129.107.255.0/24 128.142.0.0/16 188.185.0.0/17 192.170.227.128/32
   Logfile_Rotate: !<!> 50
   MaxAccessLog: !<!> 20M
   CPU: 4
   DisableLogging: True
   CleanLog: True
-  DisableDiskCache: True
+  DisableDiskCache: False
+  CacheDirOnHost: True
   IPRange: 10.1.0.0/16 129.107.255.0/24 129.15.40.0/23 129.15.42.0/23 129.15.30.0/23
   MaximumObjectSizeInMemory: !<!> 1048704
   RequestEphemeralSize: 1000
   LogToStdout: False
-  CacheMem: 65536
+  CacheMem: "16384"
 Instance: !<!> ""
 NodeSelection:
   OpenDefaultMonPort: True
